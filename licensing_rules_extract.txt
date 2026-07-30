@@ -1,0 +1,28 @@
+Fictional licensing examiner/inspector rules for this benchmark only.
+
+R-1 Active scope and duplicate handling
+Active output workbooks include only license_application_register.csv rows where application_status=Active and duplicate_of is blank. LIC-2026-909 is a closed duplicate of LIC-2026-906. Exclude closed duplicates from active license workbooks, but preserve duplicate-only evidence in source_rejection_register.xlsx and licensing_integrity_validation_report.xlsx.
+
+R-2 Source hierarchy
+license_application_register.csv is intake/planning evidence only. It does not control final eligibility, inspection compliance, fee reconciliation, enforcement closure, restriction holds, or final validation status. exam_result_log.csv controls exam evidence. inspection_findings.csv and facility_safety_checklist.csv control inspection/safety evidence after CSV-integrity review. continuing_education_log.csv controls CE evidence. renewal_fee_payments.csv controls payment evidence after CSV-integrity review. complaint_enforcement_log.csv controls enforcement response status. restriction_hold_flags.json controls public-safety, enforcement, duplicate, and conditional restriction flags. inspector_field_notes.txt can support a finding only when note status is current accepted. Draft notes cannot close holds, corrections, or enforcement cases. revision_history.csv is contextual and lower authority.
+
+R-3 CSV integrity
+Inspect raw physical CSV rows with a CSV-aware parser. A row with fewer fields than the header is malformed or missing-field evidence. A row with extra unquoted delimiters may be reconstructable only when the final narrative field can be rebuilt, but reconstructed rows remain limited-use evidence. Valid quoted commas are clean CSV syntax. Duplicate-only rows are not malformed, but they count as duplicate-only source-limitation evidence and prevent that CSV file from being classified as clean. JSON and TXT files are not CSV files.
+
+R-4 Status precedence
+License hold outranks Needs verification. Needs verification outranks Needs correction. Needs correction outranks Review required. Ready/Compliant/Cleared can be used only when controlling source hierarchy, CSV integrity, payment evidence, exam evidence, inspection evidence, CE evidence, enforcement status, restriction flags, duplicate handling, and cross-output validation are clear.
+
+R-5 License eligibility
+A license is Ready only when exam evidence is passed, inspection/safety evidence is accepted or passed, CE is complete when required, payment is settled with no malformed amount evidence, and no enforcement/public-safety/conditional restriction hold remains. Use License hold when restriction_hold_flags.json or complaint_enforcement_log.csv shows an unresolved enforcement hold or public safety hold. Use Needs verification when malformed payment or limited-use reconstructed inspection evidence affects required evidence. Use Needs correction when inspection or safety findings require correction and no stronger hold applies.
+
+R-6 Fee reconciliation
+Renewal amount due equals base_fee_usd plus late_fee_usd plus adjustment_usd. If renewal_fee_payments.csv has malformed payment evidence or amount_paid_usd is nonnumeric, payment_evidence_status is Needs verification and balance_due_usd is Needs verification. Do not use intake notes as payment proof. Payment rows with payment_status=duplicate_only are duplicate-only evidence.
+
+R-7 Inspection compliance
+Inspection compliance is controlled by inspection_findings.csv and facility_safety_checklist.csv after CSV-integrity review. Reconstructable inspection notes may be used as limited-use context but must remain disclosed. Public-safety holds, vehicle safety holds, and child safety correction orders produce License hold or Needs correction according to R-4/R-5.
+
+R-8 Enforcement response
+Open enforcement cases require response rows. Draft closure letters and draft inspector notes cannot close enforcement. Closed/accepted cases do not belong as active enforcement-response rows, but may be cited in evidence traces or validation. Response_can_be_closed must be false for open, pending, drafted, or hold cases.
+
+R-9 Validation
+licensing_integrity_validation_report.xlsx must include sections: csv_integrity_issues, clean_csv_files, row_count_checks, enum_checks, calculation_checks, source_rejection_coverage_checks, cross_output_consistency_checks, open_verification_items, final_validation_status. clean_csv_files may include only CSV files with no malformed rows, missing-field rows, reconstructable extra-delimiter rows, or duplicate-only rows. final_validation_status observed value is pass_with_open_items only when all artifact requirements are satisfied and open license issues remain; otherwise it is fail.

@@ -1,0 +1,11 @@
+# Fictional inspector field notes for benchmark use only
+
+NOTE-901 | license_id=LIC-2026-901 | status=current accepted | Inspector observed minor signage corrected onsite; no follow-up required.
+NOTE-902 | license_id=LIC-2026-902 | status=current accepted | Background-check sample accepted; renewal can proceed if fee reconciliation is clean.
+NOTE-903 | license_id=LIC-2026-903 | status=current accepted | Written exam passed, but practical elevator equipment demonstration remains pending.
+NOTE-904 | license_id=LIC-2026-904 | status=draft | Phone note says playground latch repair was promised, but invoice and follow-up inspection are not accepted.
+NOTE-905 | license_id=LIC-2026-905 | status=current accepted | Vehicle inspection hold remains until oxygen cylinder mount correction proof and payment evidence are both verified.
+NOTE-906 | license_id=LIC-2026-906 | status=current accepted | Chemical storage issue requires corrected labels and CE remediation before renewal.
+NOTE-907 | license_id=LIC-2026-907 | status=current accepted | Exam, field inspection, and safety checklist are accepted.
+NOTE-908 | license_id=LIC-2026-908 | status=draft | Draft closure letter says complaint may be closed, but enforcement supervisor acceptance is not recorded.
+NOTE-909 | license_id=LIC-2026-909 | status=duplicate_only | Duplicate-only note copied from LIC-2026-906.

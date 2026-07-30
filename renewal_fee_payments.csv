@@ -1,0 +1,10 @@
+payment_id,license_id,fee_period,base_fee_usd,late_fee_usd,adjustment_usd,amount_paid_usd,payment_status
+PAY-901,LIC-2026-901,2026,450,0,0,450,settled
+PAY-902,LIC-2026-902,2026,700,0,-50,650,settled
+PAY-903,LIC-2026-903,2026,1200,100,0,1300,settled
+PAY-904,LIC-2026-904,2026,950,150,0,1100,settled
+PAY-905,LIC-2026-905,2026,1600,200,0,amount pending
+PAY-906,LIC-2026-906,2026,900,150,0,1050,settled
+PAY-907,LIC-2026-907,2026,1250,0,0,1250,settled
+PAY-908,LIC-2026-908,2026,800,0,0,800,settled
+PAY-909,LIC-2026-909,2026,900,150,0,1050,duplicate_only
