@@ -1,0 +1,77 @@
+{
+  "file_note": "Fictional sample licensing restriction and hold flags.",
+  "flags": [
+    {
+      "license_id": "LIC-2026-901",
+      "public_safety_hold": false,
+      "conditional_restriction": false,
+      "enforcement_hold": false,
+      "duplicate_status": "active_unique",
+      "restriction_note": "none"
+    },
+    {
+      "license_id": "LIC-2026-902",
+      "public_safety_hold": false,
+      "conditional_restriction": false,
+      "enforcement_hold": false,
+      "duplicate_status": "active_unique",
+      "restriction_note": "none"
+    },
+    {
+      "license_id": "LIC-2026-903",
+      "public_safety_hold": false,
+      "conditional_restriction": true,
+      "enforcement_hold": true,
+      "duplicate_status": "active_unique",
+      "restriction_note": "Practical equipment inspection hold"
+    },
+    {
+      "license_id": "LIC-2026-904",
+      "public_safety_hold": true,
+      "conditional_restriction": true,
+      "enforcement_hold": true,
+      "duplicate_status": "active_unique",
+      "restriction_note": "Child safety correction order open"
+    },
+    {
+      "license_id": "LIC-2026-905",
+      "public_safety_hold": true,
+      "conditional_restriction": false,
+      "enforcement_hold": true,
+      "duplicate_status": "active_unique",
+      "restriction_note": "Medical transport vehicle safety hold"
+    },
+    {
+      "license_id": "LIC-2026-906",
+      "public_safety_hold": false,
+      "conditional_restriction": true,
+      "enforcement_hold": true,
+      "duplicate_status": "active_unique",
+      "restriction_note": "Chemical storage and CE remediation restriction"
+    },
+    {
+      "license_id": "LIC-2026-907",
+      "public_safety_hold": false,
+      "conditional_restriction": false,
+      "enforcement_hold": false,
+      "duplicate_status": "active_unique",
+      "restriction_note": "none"
+    },
+    {
+      "license_id": "LIC-2026-908",
+      "public_safety_hold": true,
+      "conditional_restriction": false,
+      "enforcement_hold": true,
+      "duplicate_status": "active_unique",
+      "restriction_note": "Open infection-control complaint hold"
+    },
+    {
+      "license_id": "LIC-2026-909",
+      "public_safety_hold": false,
+      "conditional_restriction": true,
+      "enforcement_hold": true,
+      "duplicate_status": "closed_duplicate",
+      "restriction_note": "Duplicate-only copied from LIC-2026-906"
+    }
+  ]
+}

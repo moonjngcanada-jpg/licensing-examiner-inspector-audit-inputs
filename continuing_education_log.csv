@@ -1,0 +1,10 @@
+ce_id,license_id,required_hours,completed_hours,ce_status,provider_status,ce_note
+CE-901,LIC-2026-901,8,8,complete,approved,All required CE complete
+CE-902,LIC-2026-902,12,12,complete,approved,All required CE complete
+CE-903,LIC-2026-903,16,16,complete,approved,CE complete but practical signoff pending
+CE-904,LIC-2026-904,10,10,complete,approved,CE complete
+CE-905,LIC-2026-905,14,14,complete,approved,CE complete
+CE-906,LIC-2026-906,20,16,deficient,approved,Four remediation hours still missing
+CE-907,LIC-2026-907,18,18,complete,approved,All required CE complete
+CE-908,LIC-2026-908,10,10,complete,approved,CE complete but enforcement hold remains
+CE-909,LIC-2026-909,20,16,duplicate_only,approved,Duplicate-only CE copied from LIC-2026-906

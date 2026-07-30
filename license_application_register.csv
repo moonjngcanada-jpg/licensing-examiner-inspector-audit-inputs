@@ -1,0 +1,10 @@
+license_id,applicant_name,license_type,application_status,duplicate_of,intake_risk_tier,intake_ready_flag,facility_id,intake_note
+LIC-2026-901,Northbridge Food Training LLC,food_handler_school,Active,,standard,true,FAC-901,Intake says license packet complete and ready for issuance
+LIC-2026-902,Clearwater Home Care Aides,home_care_agency,Active,,standard,true,FAC-902,Intake says renewal materials are clean
+LIC-2026-903,Metro Elevator Services,elevator_contractor,Active,,elevated,false,FAC-903,Intake says elevator mechanic exam requires review
+LIC-2026-904,BrightSteps Childcare Center,childcare_facility,Active,,elevated,true,FAC-904,Intake says inspection issue resolved by phone note
+LIC-2026-905,Valley Radiology Transport,medical_transport,Active,,elevated,false,FAC-905,Intake says renewal fee payment received
+LIC-2026-906,GreenLeaf Pest Services,pesticide_applicator,Active,,high,false,FAC-906,Intake says conditional license can be renewed
+LIC-2026-907,Harbor Crane Operators,crane_operator_school,Active,,standard,true,FAC-907,Intake says all exam and inspection evidence accepted
+LIC-2026-908,Silverline Tattoo Studio,body_art_establishment,Active,,high,false,FAC-908,Intake says complaint closure letter is final
+LIC-2026-909,GreenLeaf Pest Services Duplicate,pesticide_applicator,Closed duplicate,LIC-2026-906,high,false,FAC-909,Closed duplicate retained for audit trail only
